@@ -3,6 +3,7 @@ import Menubar from "./Menubar"
 import Navbar from "./Navbar"
 import Home from "./Home"
 import Footer from "./Footer"
+import "./App.css"
 
 
 const Main = () => {
@@ -22,7 +23,7 @@ const Main = () => {
   },[])
 
   return (
-    <div>
+    <div className="mainbg">
       <Navbar setSearch={setSearch}/>
       <Menubar setMenu={setMenu}/>
       <Home products={prod} search={search} menu={menu}/>
